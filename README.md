@@ -1,110 +1,55 @@
 # Book Library
 
-Este é um projeto de pesquisa de livros que permite aos usuários buscar e gerenciar informações sobre livros. Ele utiliza um banco de dados SQL Server para armazenar os dados dos livros e o Redis como cache para melhorar o desempenho da aplicação.
+This is a book search project that allows users to search for and manage information about books. It uses a SQL Server database to store book data and Redis as a cache to improve application performance.
 
-## Requisitos
+## Requirements
+
+- ASP.NET Core 7
 - SQL Server
+- Redis
 
+## Configuration
 
-## Configuração
+1. Clone the repository:
 
-1. Clone o repositório:
-
-    ```
-    git clone https://github.com/seu-usuario/book-library.git
-    ```
-
-2. Instale as dependências:
-
-    ```
-    npm install
+    ```bash
+    git clone https://github.com/your-user/book-library.git
     ```
 
-3. Configuração do banco de dados:
+2. Install dependencies:
 
-    - Certifique-se de ter um servidor SQL Server em execução.
-    - Execute o script SQL `database.sql` para criar o banco de dados e as tabelas necessárias.
-
-4. Configuração do Redis:
-
-    - Certifique-se de ter o servidor Redis em execução.
-    - As configurações de conexão com o Redis estão no arquivo `config.js`. Certifique-se de que as informações de host, porta e senha estejam corretas.
-
-5. Inicie a aplicação:
-
-    ```
-    npm start
+    ```bash
+    dotnet restore
     ```
 
-## Uso
+3. Database configuration:
 
-- Acesse a aplicação através do navegador ou de um cliente HTTP.
-- Use as diferentes rotas da API para buscar, adicionar, atualizar e excluir informações sobre os livros.
+    - Make sure you have a running SQL Server.
+    - Run the `database.sql` script to create the necessary database and tables.
 
-## Contribuição
+4. Redis configuration:
 
-Contribuições são bem-vindas! Sinta-se à vontade para abrir um problema ou enviar uma solicitação de pull.
+    - Make sure you have a running Redis server.
+    - The Redis connection settings are in the `appsettings.json` file. Make sure the host, port, and password information is correct.
 
-## Licença
+5. Run the application:
 
-Este projeto está licenciado sob a Licença MIT. Consulte o arquivo `LICENSE` para obter mais informações.
-
----
-
-Este README fornece uma visão geral básica do projeto, dos requisitos, da configuração e do uso. Certifique-se de personalizá-lo com detalhes específicos do seu projeto.
----
-
-# Book Library
-
-Este é um projeto de pesquisa de livros que permite aos usuários buscar e gerenciar informações sobre livros. Ele utiliza um banco de dados SQL Server para armazenar os dados dos livros e o Redis como cache para melhorar o desempenho da aplicação.
-
-## Requisitos
-- SQL Server
-
-
-## Configuração
-
-1. Clone o repositório:
-
-    ```
-    git clone https://github.com/seu-usuario/book-library.git
+    ```bash
+    dotnet run
     ```
 
-2. Instale as dependências:
+## Usage
 
-    ```
-    npm install
-    ```
+- Access the application through the browser.
+- Use the different API routes to search for, add, update, and delete book information.
 
-3. Configuração do banco de dados:
+## Contributing
 
-    - Certifique-se de ter um servidor SQL Server em execução.
-    - Execute o script SQL `database.sql` para criar o banco de dados e as tabelas necessárias.
+Contributions are welcome! Feel free to open an issue or send a pull request.
 
-4. Configuração do Redis:
+## License
 
-    - Certifique-se de ter o servidor Redis em execução.
-    - As configurações de conexão com o Redis estão no arquivo `config.js`. Certifique-se de que as informações de host, porta e senha estejam corretas.
+This project is licensed under the MIT License. See the `LICENSE` file for more information.
 
-5. Inicie a aplicação:
 
-    ```
-    npm start
-    ```
 
-## Uso
-
-- Acesse a aplicação através do navegador ou de um cliente HTTP.
-- Use as diferentes rotas da API para buscar, adicionar, atualizar e excluir informações sobre os livros.
-
-## Contribuição
-
-Contribuições são bem-vindas! Sinta-se à vontade para abrir um problema ou enviar uma solicitação de pull.
-
-## Licença
-
-Este projeto está licenciado sob a Licença MIT. Consulte o arquivo `LICENSE` para obter mais informações.
-
----
-
-Este README fornece uma visão geral básica do projeto, dos requisitos, da configuração e do uso. Certifique-se de personalizá-lo com detalhes específicos do seu projeto.
