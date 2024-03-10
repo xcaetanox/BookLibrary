@@ -3,13 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34607.119
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookLibrary", "BookLibrary\BookLibrary.csproj", "{0D286D7B-CB65-4830-9019-2975BDB1BB99}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BookLibrary", "BookLibrary\BookLibrary.csproj", "{0D286D7B-CB65-4830-9019-2975BDB1BB99}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain", "Domain\Domain.csproj", "{A92318BA-01F4-4B28-A6D2-86142481E118}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Domain", "Domain\Domain.csproj", "{A92318BA-01F4-4B28-A6D2-86142481E118}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Repository", "Repository\Repository.csproj", "{AE860790-6E36-409A-AE1C-3EE126FD1F14}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Repository", "Repository\Repository.csproj", "{AE860790-6E36-409A-AE1C-3EE126FD1F14}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "infrastructure", "infrastructure\infrastructure.csproj", "{0D465EFF-B11B-4B9D-94F1-3E00DC0A9E19}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "infrastructure", "infrastructure\infrastructure.csproj", "{0D465EFF-B11B-4B9D-94F1-3E00DC0A9E19}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BooksTests", "BooksTests\BooksTests.csproj", "{7EEB3A87-0995-4747-9580-67D9785C779B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{0D465EFF-B11B-4B9D-94F1-3E00DC0A9E19}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0D465EFF-B11B-4B9D-94F1-3E00DC0A9E19}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0D465EFF-B11B-4B9D-94F1-3E00DC0A9E19}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7EEB3A87-0995-4747-9580-67D9785C779B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7EEB3A87-0995-4747-9580-67D9785C779B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7EEB3A87-0995-4747-9580-67D9785C779B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7EEB3A87-0995-4747-9580-67D9785C779B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
