@@ -6,7 +6,7 @@ This is a book search project that allows users to search for and manage informa
 
 - ASP.NET Core 7
 - SQL Server
-- Redis
+
 
 ## Configuration
 
