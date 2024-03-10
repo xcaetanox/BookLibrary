@@ -1,0 +1,70 @@
+﻿@model BooksViewModel
+
+<div class="container-fluid">
+    <div class="row justify-content-center">
+        <div class="col-md-12">
+            <div class="card mt-6">
+                <div class="card-body">
+                    <h2 class="card-title text-center mb-4">Search Books</h2>
+                    @using (Html.BeginForm("Search", "Home", FormMethod.Post, new { @class = "row g-3 justify-content-center" }))
+                    {
+                        <div class="col-md-3">
+                            <label for="searchBy" class="form-label">Search By:</label>
+                            <select id="searchBy" name="searchBy" class="form-select">
+                                <option value="all">All</option>
+                                <option value="title">Title</option>
+                                <option value="firstName">FirstName</option>
+                                <option value="lastName">LastName</option>
+                                <option value="totalCopies">Total Copies</option>
+                                <option value="copiesInUse">Copies In Use</option>
+                                <option value="isbn">ISBN</option>
+                                <option value="type">Type</option>
+                                <option value="category">Category</option>
+                            </select>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="searchTerm" class="form-label">Search Term:</label>
+                            <input type="text" id="searchTerm" name="searchTerm" class="form-control" />
+                        </div>
+                        <div class="col-md-3 d-flex align-items-end">
+                            <button type="submit" class="btn btn-primary w-100">Search</button>
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row justify-content-center mt-4">
+        <div class="col-md-12">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Title</th>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>Total Copies</th>
+                        <th>Copies In Use</th>
+                        <th>ISBN</th>
+                        <th>Type</th>
+                        <th>Category</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var book in Model.listBooks)
+                    {
+                        <tr>
+                            <td>@book.Title</td>
+                            <td>@book.FirstName</td>
+                            <td>@book.LastName</td>
+                            <td>@book.TotalCopies</td>
+                            <td>@book.CopiesInUse</td>
+                            <td>@book.Isbn</td>
+                            <td>@book.Type</td>
+                            <td>@book.Category</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
